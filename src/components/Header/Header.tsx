@@ -1,11 +1,12 @@
 import React from 'react';
-import "./Header.css"
+import './Header.scss';
 
 function Header() {
-  return (
-    <div className="App">
-    </div>
-  );
+    return (
+        <header className='header'>
+            <div className='header-v'></div>
+        </header>
+    );
 }
 
 export default Header;
