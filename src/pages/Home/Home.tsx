@@ -1,10 +1,11 @@
 import React from 'react';
-import Button from '../../components/Button/Button';
+import { Button, Text } from 'components';
 
 function Home() {
     return (
         <div className='App'>
-            <Button text='Забронировать тур'></Button>
+            <Button>Забронировать тур</Button>
+            <Text>fsd</Text>
         </div>
     );
 }

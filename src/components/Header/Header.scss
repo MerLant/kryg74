@@ -1,3 +1,22 @@
+@import 'styles/_variables.scss';
+
 .header {
+    background-color: olive;
     display: flex;
+    flex-direction: column;
+
+    .header-title {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+
+        .header-title-img {
+            width: 390px;
+        }
+    }
+
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+    }
 }
