@@ -1,11 +1,11 @@
 @import 'styles/_variables.scss';
 
 .header {
-    background-color: olive;
     display: flex;
     flex-direction: column;
 
     .header-title {
+        background-color: olive;
         align-items: center;
         display: flex;
         flex-direction: row;
@@ -16,6 +16,7 @@
     }
 
     .header-nav {
+        position: relative;
         display: flex;
         justify-content: space-between;
     }

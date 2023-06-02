@@ -1,7 +1,7 @@
 import React from 'react';
 import MyRoutes from 'router/router';
 
-import { Header, Test } from 'components';
+import { Header } from 'components';
 
 function App() {
     return (

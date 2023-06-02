@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Test.scss';
 
 function Test() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
-        <div className='container'>
-            {/* <div className='overlay'>Это наезжающий элемент</div> */}
-            <div className='content'>Это основной контент</div>
+        <div className='burger-menu'>
+            <button
+                className={`burger-icon ${isOpen ? 'open' : ''}`}
+                onClick={toggleMenu}
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div className={`menu-items ${isOpen ? 'open' : ''}`}>
+                <a href='/'>Главная</a>
+                <a href='/about'>О нас</a>
+                <a href='/contact'>Контакты</a>
+            </div>
         </div>
     );
 }
