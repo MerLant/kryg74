@@ -3,6 +3,7 @@ import './Button.scss';
 
 interface ButtonProps {
     children?: React.ReactNode;
+    them?: 'btn-dark | btn-white';
 }
 
 function Button(props: ButtonProps) {

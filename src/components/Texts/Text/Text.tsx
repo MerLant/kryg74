@@ -16,3 +16,5 @@ function Text(props: TextProps): JSX.Element {
 }
 
 export default Text;
+
+//style component

@@ -3,9 +3,12 @@
 .header {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    width: 99.1vw;
+    z-index: 5;
 
     .header-title {
-        background-color: olive;
+        background-color: $white;
         align-items: center;
         display: flex;
         flex-direction: row;
