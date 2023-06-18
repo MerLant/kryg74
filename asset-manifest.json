@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kryg74/static/css/main.a6045bd2.css",
-    "main.js": "/kryg74/static/js/main.cd64e0d0.js",
+    "main.css": "/kryg74/static/css/main.b86ef90c.css",
+    "main.js": "/kryg74/static/js/main.2e0b746b.js",
     "static/media/gallery1.png": "/kryg74/static/media/gallery1.86fd0dd29e4e5e55d289.png",
     "static/media/background.png": "/kryg74/static/media/background.02e8cc595a1a13e269ba.png",
     "static/media/gallery3.png": "/kryg74/static/media/gallery3.18312515a373f96d24bc.png",
@@ -16,6 +16,9 @@
     "static/media/OpenSans-Regular.ttf": "/kryg74/static/media/OpenSans-Regular.193203d82e5dd325f0b8.ttf",
     "static/media/OpenSans-Regular.woff": "/kryg74/static/media/OpenSans-Regular.b92cb4a9aaeffb93908d.woff",
     "static/media/OpenSans-Bold.woff": "/kryg74/static/media/OpenSans-Bold.b37d1709d6c6974c1258.woff",
+    "static/media/person3.png": "/kryg74/static/media/person3.1e496d2f1333e0bc18d1.png",
+    "static/media/person2.png": "/kryg74/static/media/person2.362ec8bc4b16ca837b67.png",
+    "static/media/person1.png": "/kryg74/static/media/person1.3dcc4062712ffe2c4c02.png",
     "static/media/OpenSans-Regular.woff2": "/kryg74/static/media/OpenSans-Regular.4361a1a4c7bcc152b0dd.woff2",
     "static/media/OpenSans-Bold.woff2": "/kryg74/static/media/OpenSans-Bold.53adcff143a448b00f77.woff2",
     "static/media/logo.svg": "/kryg74/static/media/logo.f0aa2497be9c347e3e4272ef8ef6e657.svg",
@@ -23,11 +26,11 @@
     "static/media/maki_cross.svg": "/kryg74/static/media/maki_cross.666f6ea536c6ebd1be93.svg",
     "index.html": "/kryg74/index.html",
     "static/media/vk.svg": "/kryg74/static/media/vk.711273aa1bda94e78218f2f0b9ac7e70.svg",
-    "main.a6045bd2.css.map": "/kryg74/static/css/main.a6045bd2.css.map",
-    "main.cd64e0d0.js.map": "/kryg74/static/js/main.cd64e0d0.js.map"
+    "main.b86ef90c.css.map": "/kryg74/static/css/main.b86ef90c.css.map",
+    "main.2e0b746b.js.map": "/kryg74/static/js/main.2e0b746b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6045bd2.css",
-    "static/js/main.cd64e0d0.js"
+    "static/css/main.b86ef90c.css",
+    "static/js/main.2e0b746b.js"
   ]
 }
