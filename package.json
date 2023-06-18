@@ -2,7 +2,7 @@
     "name": "bag",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://merlant.github.io/kryg74/",
+    "homepage": "https://merlant.github.io/kryg74",
     "dependencies": {
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^13.0.0",
@@ -27,7 +27,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "predeploy": "npm run build",
+        "predeploy": "yarn run build",
         "deploy": "gh-pages -d build",
         "format": "prettier --write \"src/**/*.+(js|jsx|tsx|json|css|scss)\""
     },
