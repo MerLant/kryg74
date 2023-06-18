@@ -1,19 +1,34 @@
 @import 'styles/_variables.scss';
 .button {
+    height: 60px;
     border-radius: 65px;
     border: 0;
-    padding: 16px 39px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    color: $white;
+    padding: 0 39px;
     background-color: $orange;
-    transition: color, background-color ease-in-out 0.1s;
+    transition: background-color ease-in-out 0.1s;
+
+    &.full-width {
+        margin-left: 20px;
+        width: 100%;
+    }
 
     &:hover,
     &:active {
         background: $yellow;
+    }
+
+    &:hover .link,
+    &:active .link {
         color: $blue;
+    }
+
+    .link {
+        font-family: 'Open Sans', sans-serif;
+        color: $white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color ease-in-out 0.1s;
     }
 }

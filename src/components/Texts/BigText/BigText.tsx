@@ -1,5 +1,5 @@
 import React from 'react';
-import './Text.scss';
+import './BigText.scss';
 
 interface TextProps {
     children?: React.ReactNode;
@@ -12,7 +12,7 @@ interface TextProps {
  * @return {JSX.Element} The rendered Text component.
  */
 function Text(props: TextProps): JSX.Element {
-    return <p className='text'>{props.children}</p>;
+    return <p className='bigtext'>{props.children}</p>;
 }
 
 export default Text;

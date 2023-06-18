@@ -1,5 +1,5 @@
 import React from 'react';
-import './Text.scss';
+import './SectionTitle.scss';
 
 interface TextProps {
     children?: React.ReactNode;
@@ -11,10 +11,10 @@ interface TextProps {
  * @param {TextProps} props - The properties object for the Text component.
  * @return {JSX.Element} The rendered Text component.
  */
-function Text(props: TextProps): JSX.Element {
-    return <p className='text'>{props.children}</p>;
+function SectionTitle(props: TextProps): JSX.Element {
+    return <h2 className='sectiontitile'>{props.children}</h2>;
 }
 
-export default Text;
+export default SectionTitle;
 
 //style component

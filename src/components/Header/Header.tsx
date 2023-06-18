@@ -12,9 +12,13 @@ function Header() {
         <header className='header'>
             <div className='header-title'>
                 <img className='header-titile-img' src={Logo} alt='Лого' />
-                <Text>площадь Революции, г. Челябинск</Text>
-                <Social src={VK} href='#' />
-                <Social src={OneClass} href='#' />
+                <div className='header-titile-left'>
+                    <Text>площадь Революции, г. Челябинск</Text>
+                    <div className='header-titile-left-social'>
+                        <Social src={VK} href='#' />
+                        <Social src={OneClass} href='#' />
+                    </div>
+                </div>
             </div>
             <nav className='header-nav'>
                 <TextButton href='#'>Маршруты</TextButton>

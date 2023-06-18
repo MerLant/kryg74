@@ -1,5 +1,5 @@
 import React from 'react';
-import './Text.scss';
+import './H1.scss';
 
 interface TextProps {
     children?: React.ReactNode;
@@ -11,10 +11,10 @@ interface TextProps {
  * @param {TextProps} props - The properties object for the Text component.
  * @return {JSX.Element} The rendered Text component.
  */
-function Text(props: TextProps): JSX.Element {
-    return <p className='text'>{props.children}</p>;
+function H1(props: TextProps): JSX.Element {
+    return <h1 className='h1'>{props.children}</h1>;
 }
 
-export default Text;
+export default H1;
 
 //style component
