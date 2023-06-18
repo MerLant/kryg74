@@ -1,8 +1,15 @@
 {
   "files": {
-    "main.css": "/kryg74/static/css/main.d1e49e2b.css",
-    "main.js": "/kryg74/static/js/main.36b39fa9.js",
+    "main.css": "/kryg74/static/css/main.a6045bd2.css",
+    "main.js": "/kryg74/static/js/main.f4ac017b.js",
+    "static/media/gallery1.png": "/kryg74/static/media/gallery1.86fd0dd29e4e5e55d289.png",
     "static/media/background.png": "/kryg74/static/media/background.02e8cc595a1a13e269ba.png",
+    "static/media/gallery3.png": "/kryg74/static/media/gallery3.18312515a373f96d24bc.png",
+    "static/media/gallery4.png": "/kryg74/static/media/gallery4.3852052a0a0784817b68.png",
+    "static/media/gallery2.png": "/kryg74/static/media/gallery2.36f7ada5b8d2f2200a3d.png",
+    "static/media/card3.png": "/kryg74/static/media/card3.a2f7bd819ac425661164.png",
+    "static/media/card2.png": "/kryg74/static/media/card2.5e320e9e6dcaaf8dc0d1.png",
+    "static/media/card1.png": "/kryg74/static/media/card1.59308567c2674436297b.png",
     "static/media/OpenSans-Bold.eot": "/kryg74/static/media/OpenSans-Bold.baaec7a009f9f87f5b8f.eot",
     "static/media/OpenSans-Bold.ttf": "/kryg74/static/media/OpenSans-Bold.b31c7eafef9b5ad6324e.ttf",
     "static/media/OpenSans-Regular.eot": "/kryg74/static/media/OpenSans-Regular.df03e9ce2ebcf8fc5ebd.eot",
@@ -13,13 +20,14 @@
     "static/media/OpenSans-Bold.woff2": "/kryg74/static/media/OpenSans-Bold.53adcff143a448b00f77.woff2",
     "static/media/logo.svg": "/kryg74/static/media/logo.f0aa2497be9c347e3e4272ef8ef6e657.svg",
     "static/media/oneclass.svg": "/kryg74/static/media/oneclass.251eae058fa4821b8f86af8ded48655e.svg",
+    "static/media/maki_cross.svg": "/kryg74/static/media/maki_cross.666f6ea536c6ebd1be93.svg",
     "index.html": "/kryg74/index.html",
     "static/media/vk.svg": "/kryg74/static/media/vk.711273aa1bda94e78218f2f0b9ac7e70.svg",
-    "main.d1e49e2b.css.map": "/kryg74/static/css/main.d1e49e2b.css.map",
-    "main.36b39fa9.js.map": "/kryg74/static/js/main.36b39fa9.js.map"
+    "main.a6045bd2.css.map": "/kryg74/static/css/main.a6045bd2.css.map",
+    "main.f4ac017b.js.map": "/kryg74/static/js/main.f4ac017b.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1e49e2b.css",
-    "static/js/main.36b39fa9.js"
+    "static/css/main.a6045bd2.css",
+    "static/js/main.f4ac017b.js"
   ]
 }
