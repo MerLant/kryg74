@@ -3,6 +3,7 @@ import './Text.scss';
 
 interface TextProps {
     children?: React.ReactNode;
+    className?: string;
 }
 
 /**
@@ -12,7 +13,7 @@ interface TextProps {
  * @return {JSX.Element} The rendered Text component.
  */
 function Text(props: TextProps): JSX.Element {
-    return <p className='text'>{props.children}</p>;
+    return <p className={`text ${props.className}`}>{props.children}</p>;
 }
 
 export default Text;

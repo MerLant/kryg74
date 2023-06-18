@@ -10,6 +10,10 @@ import Image2 from 'images/gallery2.png';
 import Image3 from 'images/gallery3.png';
 import Image4 from 'images/gallery4.png';
 
+import Person1 from 'images/person1.png';
+import Person2 from 'images/person2.png';
+import Person3 from 'images/person3.png';
+
 import {
     Button,
     Text,
@@ -19,8 +23,8 @@ import {
     Select,
     CardAbout,
     SectionTitle,
+    CardReview,
 } from 'components';
-import { string } from 'yup';
 
 function getImageClassName(imageClass: string, expandedImage: string) {
     if (expandedImage === imageClass) {
@@ -100,13 +104,13 @@ function Home() {
             </section>
             <section className='cards'>
                 <div className='line'>
-                    <CardAbout href='' image={CardOne}>
+                    <CardAbout href='#' image={CardOne}>
                         Где отдохнуть в зимние выходные?
                     </CardAbout>
-                    <CardAbout href='' image={CardTwo}>
+                    <CardAbout href='#' image={CardTwo}>
                         Фестиваль Уральские валенки в г. Куса
                     </CardAbout>
-                    <CardAbout href='' image={CardThree}>
+                    <CardAbout href='#' image={CardThree}>
                         Музей пельменя г. Миасс
                     </CardAbout>
                 </div>
@@ -148,6 +152,57 @@ function Home() {
                             onClick={() => handleImageClick('image4')}
                         />
                     </div>
+                </div>
+            </section>
+            <section className='reviews'>
+                <div className='block'>
+                    <SectionTitle>Отзывы</SectionTitle>
+                    <div className='cards'>
+                        <CardReview image={Person1} name='Екатерина'>
+                            Спасибо за тур в Екатеринбург на Свердловскую
+                            киностудию! Очень интересно и познавательно. Дети
+                            были в восторге. Светлана показала интересные места
+                            в городе, удивляет каждый раз, спасибо! Ждём новых
+                            встреч с нетерпением!
+                        </CardReview>
+                        <CardReview image={Person2} name='Елена'>
+                            Большое спасибо Светлане и Татьяне за чудесные
+                            поездки, эмоции! Замечательная организация тура.
+                            Самое лучшее место — это прекрасные пейзажи,
+                            чистейший воздух, покой и умиротворение.
+                        </CardReview>
+                        <CardReview image={Person3} name='Римма'>
+                            Светлана — супергид. Спасибо за интересную поездку в
+                            Екатеринбург, очень познавательно, позитивно, с
+                            юмором. Очень благодарны!
+                        </CardReview>
+                    </div>
+                </div>
+            </section>
+            <section className='callback'>
+                <div className='block'>
+                    <SectionTitle>
+                        Свяжитесь с нами, если
+                        <br />у вас остались вопросы
+                    </SectionTitle>
+                    <form className='form'>
+                        <input
+                            type='tel'
+                            className='input'
+                            placeholder='Тел.'
+                        />
+                        <Button href='#'>Обратный звонок</Button>
+                        <div className='checkboxs'>
+                            <input
+                                className='checkbox'
+                                type='checkbox'
+                                name='checkbox'
+                            />
+                            <label className='label' htmlFor='checkbox'>
+                                я согласен на обработку персональных данных
+                            </label>
+                        </div>
+                    </form>
                 </div>
             </section>
         </main>

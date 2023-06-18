@@ -1,7 +1,7 @@
 import { Button, TextButton, Social } from './Buttons';
 import { Text, H1, BigText, SectionTitle } from './Texts';
 import { Input, Select } from './Form';
-import { CardAbout } from './Cards';
+import { CardAbout, CardReview } from './Cards';
 import Header from './Header/Header';
 import Test from './Test/Test';
 
@@ -18,4 +18,5 @@ export {
     Select,
     CardAbout,
     SectionTitle,
+    CardReview,
 };

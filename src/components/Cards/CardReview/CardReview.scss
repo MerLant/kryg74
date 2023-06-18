@@ -1,0 +1,27 @@
+@import 'styles/_variables.scss';
+
+.cardreview {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 63px;
+    box-shadow: 0px 10px 20px rgba(46, 69, 85, 0.1);
+    border-radius: 65px;
+    background-color: $white;
+    width: 527px;
+    height: 643px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+
+    .photo {
+        width: 197px;
+        height: 197px;
+    }
+
+    .name {
+        margin-top: 20px;
+        margin-bottom: 33px;
+    }
+}

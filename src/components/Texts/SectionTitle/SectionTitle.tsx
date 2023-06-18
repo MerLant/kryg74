@@ -3,6 +3,7 @@ import './SectionTitle.scss';
 
 interface TextProps {
     children?: React.ReactNode;
+    className?: string;
 }
 
 /**
@@ -12,7 +13,9 @@ interface TextProps {
  * @return {JSX.Element} The rendered Text component.
  */
 function SectionTitle(props: TextProps): JSX.Element {
-    return <h2 className='sectiontitile'>{props.children}</h2>;
+    return (
+        <h2 className={`sectiontitile ${props.className}`}>{props.children}</h2>
+    );
 }
 
 export default SectionTitle;
