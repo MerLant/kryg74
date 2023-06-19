@@ -16,7 +16,6 @@ import Person3 from 'images/person3.png';
 
 import {
     Button,
-    Text,
     H1,
     BigText,
     Input,
@@ -191,7 +190,9 @@ function Home() {
                             className='input'
                             placeholder='Тел.'
                         />
-                        <Button href='#'>Обратный звонок</Button>
+                        <Button href='#' className='but'>
+                            Обратный звонок
+                        </Button>
                         <div className='checkboxs'>
                             <input
                                 className='checkbox'

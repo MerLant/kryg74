@@ -30,7 +30,7 @@
             padding-bottom: 26px;
             padding-right: 40px;
             border-radius: 60px;
-            width: 84%;
+            width: min(100% - 3vw, 1620px);
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -41,12 +41,28 @@
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
+
+                @media (max-width: 1150px) {
+                    & {
+                        flex-wrap: wrap;
+                    }
+                }
             }
             .secondline {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-end;
+
+                @media (max-width: 1150px) {
+                    & {
+                        flex-wrap: wrap;
+                    }
+
+                    & > *:last-child {
+                        margin-top: 36px;
+                    }
+                }
             }
         }
     }
@@ -59,8 +75,7 @@
 
         .line {
             justify-content: center;
-            width: min(100%, 1532px);
-            margin: 0 3vw;
+            width: min(100% - 3vw, 1532px);
             height: 100%;
             grid-template-columns: repeat(auto-fit, minmax(320px, 500px));
             display: inline-grid;
@@ -74,14 +89,16 @@
     }
 
     .gallerys {
+        width: 100%;
         display: flex;
         justify-content: center;
         margin-bottom: 120px;
 
         .block {
-            width: 84%;
+            width: min(100% - 3vw, 1620px);
 
             .gallery {
+                width: 100%;
                 margin-top: 50px;
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -148,11 +165,13 @@
         justify-content: center;
 
         .block {
-            width: 84%;
+            width: min(100% - 3vw, 1620px);
 
             .cards {
+                width: 100%;
                 display: flex;
-                justify-content: space-between;
+                //justify-content: space-between;
+
                 flex-wrap: wrap;
 
                 margin-top: 50px;
@@ -171,20 +190,30 @@
         justify-content: center;
 
         .block {
+            width: min(100% - 3vw, 1000px);
             display: flex;
             justify-self: center;
             flex-direction: column;
             align-items: center;
+
             .form {
                 margin-top: 60px;
                 margin-bottom: 270px;
                 display: grid;
                 grid-auto-flow: dense;
                 grid-template-columns: 2fr 1fr;
-                grid-auto-rows: auto;
+
                 column-gap: 20px;
                 row-gap: 30px;
                 justify-items: center;
+
+                @media (max-width: 905px) {
+                    grid-template-columns: repeat(auto-fill, calc(100% - 3vw));
+
+                    .checkboxs {
+                        grid-column-end: auto; /* Сбрасываем span */
+                    }
+                }
 
                 .input {
                     border-radius: 65px;
@@ -215,10 +244,17 @@
                     }
                 }
 
+                .but {
+                    width: 100%;
+                }
+
                 .checkboxs {
-                    grid-column-end: span 3;
                     display: flex;
                     align-items: center;
+
+                    @media (min-width: 905px) {
+                        grid-column-end: span 3;
+                    }
 
                     .checkbox {
                         width: 20px;
@@ -243,7 +279,7 @@
                         font-family: 'Open Sans';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 24px;
+                        font-size: clamp(12px, 3vw, 24px);
                         line-height: 33px;
                         color: $text-color;
                     }

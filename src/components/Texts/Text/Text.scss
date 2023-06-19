@@ -4,7 +4,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(12px, 3vw, 24px);
     line-height: 33px;
     color: $text-color;
 }

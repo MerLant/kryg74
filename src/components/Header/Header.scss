@@ -1,5 +1,13 @@
 @import 'styles/_variables.scss';
 
+.fixid {
+    position: fixed;
+}
+
+.plus {
+    height: 123px;
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -8,8 +16,9 @@
     z-index: 5;
     align-items: center;
 
-    .header-title {
-        width: 84%;
+    .title {
+        z-index: 5;
+        width: min(100% - 3vw, 1620px);
 
         background-color: $white;
         height: 100%;
@@ -17,32 +26,151 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .header-title-img {
+
+        .img {
             width: 390px;
             align-items: center;
+
+            @media (max-width: 900px) {
+                & {
+                    display: none;
+                }
+            }
         }
-        .header-titile-left {
+
+        .imgmini {
+            display: none;
+
+            @media (max-width: 900px) {
+                & {
+                    display: block;
+                }
+            }
+        }
+
+        .left {
             align-items: center;
             display: flex;
             flex-direction: row;
-            .header-titile-left-social {
+
+            .address {
+                margin-right: 120px;
+
+                @media (max-width: 1200px) {
+                    & {
+                        display: none;
+                    }
+                }
+            }
+
+            .social {
                 align-items: center;
-                margin-left: 120px;
-                width: 120px;
+                width: 110px;
                 justify-content: space-between;
                 display: flex;
                 flex-direction: row;
+
+                @media (max-width: 900px) {
+                    & {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .hamburger {
+            border: none;
+            padding: 0;
+            background-color: $white;
+            display: block;
+            width: 71px;
+            height: 71px;
+            @media (min-width: 900px) {
+                display: none;
             }
         }
     }
 
-    .header-nav {
+    .nav {
         align-items: center;
         position: absolute;
         z-index: 6;
-        width: 84%;
+        width: min(100% - 3vw, 1620px);
+        margin: 0 3vw;
         top: 150px;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 900px) {
+            & {
+                display: none;
+            }
+        }
+    }
+
+    .open {
+        display: none;
+
+        @keyframes fillScreen {
+            from {
+                transform: translateY(calc(-100% + 123px));
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 900px) {
+            & {
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                position: fixed;
+                top: 0;
+                z-index: 1;
+                width: 100vw;
+                height: 100vh;
+                background-color: white;
+                animation: fillScreen 1s forwards;
+                padding-bottom: 20vw;
+
+                & > * {
+                    color: $text-color;
+
+                    &::after {
+                        background-color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .closed {
+        display: none;
+        @keyframes hideScreen {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(calc(-100% + 123px));
+                display: none;
+            }
+        }
+
+        @media (max-width: 900px) {
+            & {
+                display: block;
+                position: fixed;
+                top: -123px;
+                // left: 0;
+                // right: 0;
+                z-index: 1;
+                height: 100vh;
+                width: 100vw;
+                background-color: white;
+                animation: hideScreen 1s forwards;
+            }
+        }
     }
 }

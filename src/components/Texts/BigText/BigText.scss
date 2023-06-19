@@ -4,6 +4,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    margin: 0 5vw;
+    font-size: clamp(24px, 5vw, 48px);
     color: $white;
 }
