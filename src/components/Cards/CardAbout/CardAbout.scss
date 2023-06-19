@@ -2,9 +2,9 @@
 
 .cardabout {
     // width: 529px;
-    height: 497px;
+    width: min(500px, 100%);
+    height: min(497px, 50vh);
 
-    width: 100%;
     padding: 40px;
 
     background-position: center;

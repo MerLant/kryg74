@@ -54,19 +54,21 @@
     .cards {
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         margin-bottom: 120px;
 
         .line {
-            width: 84%;
-            display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            width: min(100%, 1532px);
+            margin: 0 3vw;
+            height: 100%;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 500px));
+            display: inline-grid;
+            gap: 30px 16px;
+            justify-items: center;
 
             & > * {
-                margin-right: 1%;
-                &:last-child {
-                    margin-right: 0;
-                }
+                overflow: hidden;
             }
         }
     }

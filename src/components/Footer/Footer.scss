@@ -1,0 +1,50 @@
+@import 'styles/_variables.scss';
+
+.footer {
+    padding-top: 20px;
+    min-height: 439px;
+    background-color: $blue;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    & > * {
+        margin: 20px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .user {
+        display: flex;
+        flex-direction: column;
+        & > * {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
